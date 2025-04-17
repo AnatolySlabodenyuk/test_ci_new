@@ -16,7 +16,7 @@ FUNNY_NICKNAMES = [
     "Шаман Багов"
 ]
 
-@app.route("/nicknames")
+@app.route("/nickname")
 def get_nickname():
     nickname = random.choice(FUNNY_NICKNAMES)
     return jsonify({"nickname": nickname})
